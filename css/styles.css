@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    padding: 0%;
+    
+}
+body{
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#calc{
+background: #9f8cac;
+display: flex;
+justify-content: center;
+width: 500px;
+padding: .9em;
+color:black;
+flex-direction: column;
+border-radius: 20px;
+}
+#calc h3{
+    font-size: .8em;
+    font-weight: 300;
+    color: #666;
+}
+#operations{
+    text-align: right;
+} 
+
+#current-operation,
+#previous-operation{
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    padding: 0.2em;
+}
+#previous-operation{
+    color: #595656;
+}
+#current-operation{
+    font-size: 3em;
+    font-weight: 700;
+}
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
+#buttons-container button{
+border: 1px solid transparent;
+border-radius: 0px;
+height: 4em;
+font-size: 1.2em;
+background: #beadc8;
+cursor: pointer;
+border-radius: 10px;
+transition: 0.3s;
+}
+#buttons-container .number{
+    background: #f3f3f3;
+    transition: 0.3s;
+}
+#buttons-container button:hover{
+    background: #bababa;
+    border-color: #999; 
+    border-radius: 15px;
+}
+
+#buttons-container #equal-bnt{
+    grid-column: span 2;
+    background: #813ad8;
+    transition: .3s;
+}
+#buttons-container #equal-bnt:hover{
+    background: #6b2db7;
+
+}
